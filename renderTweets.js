@@ -1,12 +1,37 @@
 
 function renderTweets(tweets) {
     return `
-        <div class="text-center mt-5">
-            <code>${JSON.stringify(tweets)}</code>
-        </div>
+        ${tweets.map(tests).join("")}
     `
 }
+function tests(tests) {
+    var image = '<img class="verified-icon" src="cards/verified-badge.jpg">'
+    var retweetimage = '<img class="retweet" src="cards/retweet.png">'
+    var likeImage = '<img class="like" src="cards/Like_Twitter.png">'
+    var replayImage = '<img class="reply" src="cards/replay.png">'
+    var emailIcon = '<img class="reply" src="cards/email-icon.png">'
 
+
+    return `
+
+    <img class="profile-pic" src="${tests.user.profilePic}"> 
+    <h5>${tests.user.username}  <span>${tests.user.isVerified ? image : ''}</span></h5>
+    <p> ${tests.user.handle}</p>
+   
+    <h3 class="text">${tests.text}</h3>
+    <div class="tweets">
+    
+    <p>
+    <span> ${likeImage}${tests.likes} </span>
+    <span>${retweetimage}${tests.retweets} </span>
+    <span>${replayImage} ${tests.replies} </span>
+    <span>${emailIcon} </span>
+
+    </p>
+    </div>
+
+    `
+}
 function tweets() {
     var content = document.getElementById('content');
 

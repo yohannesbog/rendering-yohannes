@@ -1,9 +1,40 @@
 
 function renderAlbums(albums) {
+    // HINT: You probably need to write a for loop!
+    //       Or, if you're feeling fancy, use .map() 
+
+    //create map for the map too
+
     return `
-        <div class="text-center mt-5">
-            <code>${JSON.stringify(albums)}</code>
-        </div>
+    ${albums.map(newalbum).join('')}
+`  
+}
+
+function newalbum(newalbum1){
+    
+    return  `
+    <div class="artist">
+    <h1>${newalbum1.artist}</h1> </br>
+    </div>
+  ${newalbum1.albums.map(function(newa){
+      return `
+      <div class="album-cover">
+      <img class="img" src=${newa.albumCover} <h3>${newa.title}</h3> 
+      </div>
+     ${newa.songs.map(function(songs){
+         return `
+         <div class="play">
+         <div class="play-symbol">
+          <h5 class="song-list">${songs.title} <span class="song-length"> ${songs.length}</span><h5>
+
+         </div>
+         </div>
+        
+
+         `
+     }).join('')}
+      `
+  })}
     `
 }
 

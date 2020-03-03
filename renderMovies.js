@@ -1,13 +1,31 @@
 
 function renderMovies(movies) {
-    return `
-        <div class="text-center mt-5">
-            <code>${JSON.stringify(movies)}</code>
-        </div>
+   
+    return  `
+    ${movies.map(test).join('')};
     `
 }
 
-function movies() {
+function test(new2){
+return `
+<div class="main-moviebox">
+<div class="movie-box">
+<img class="movie-img" src="${new2.poster}">
+</div>
+<div class="movie-description">
+<h1>Title: ${new2.title} </h1>
+<p> Released: ${new2.year}</p> </span>
+<p> ID: ${new2.imdbID}</p>
+<p> Rating:${new2.rottenTomatoesRating}</p>
+<p> IMBDRating: ${new2.imdbRating}</p>
+</div>
+</div>
+`
+}
+
+
+
+ function movies() {
     var content = document.getElementById('content');
 
     var moviesAbstraction = [
@@ -39,4 +57,5 @@ function movies() {
 
     content.innerHTML = renderMovies(moviesAbstraction);
 
-}
+ }
+

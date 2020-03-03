@@ -1,12 +1,26 @@
 
 function renderNametags(nametags) {
     return `
-        <div class="text-center mt-5">
-            <code>${JSON.stringify(nametags)}</code>
-        </div>
+            ${nametags.map(names).join("")}
+
+        
+        
     `
 }
 
+function names(names){
+    return `
+    <div class="name-tags">
+    <div class="names">
+    <h2 class="hello">Hello, my name is: </h3>
+    <h3 class="name-get">
+     ${names}
+     </h3>
+     </div>
+     </div>
+    `
+ 
+}
 function nametags() {
     var content = document.getElementById('content');
 

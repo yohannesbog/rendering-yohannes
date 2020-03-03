@@ -2,8 +2,44 @@
 function renderSurveys(surveys) {
     return `
         <div class="text-center mt-5">
-            <code>${JSON.stringify(surveys)}</code>
+        ${surveys.map(surveysl).join('')}
         </div>
+    `
+}
+
+function surveysl(test){
+    var answerYes = 
+    `
+    <input type="radio" id="answer">
+
+         <label for="Yes">Yes</label>
+    `
+    var answerNo= `
+    <input type="radio" id="answer">
+         <label for="NO">No</label>
+    `
+    return `
+    <div class="survey">
+
+    <h1>
+    ${test.title}
+    </h1>
+     ${test.fields.map(function(nes){
+         return `
+         <p>
+         ${nes.label}
+         </p>
+         <input type="${nes.type}" id="answer">
+
+         <label for="yes"> ${nes.options ?  nes.options:''}</label>
+         </br>  
+         `
+     }).join('')}
+     <button style="background-color:rgb(22, 151, 238);">
+         ${test.submitButtonText}
+         </button>
+     </div>
+
     `
 }
 
@@ -59,3 +95,4 @@ function surveys() {
     content.innerHTML = renderSurveys(surveysAbstraction);
 
 }
+

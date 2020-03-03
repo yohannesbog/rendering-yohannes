@@ -1,1 +1,232 @@
 /* Type whatever CSS you need here! */
+
+
+/* albums  */
+
+
+.artist{
+    padding: 10px;
+    border-bottom: 2px black solid;;
+}
+.album-cover{
+    border-bottom: 1px black solid;
+
+}
+.img{
+    padding:10px;
+    width: 100px;
+    height:100px;
+
+}
+
+.play-symbol {
+    border-top: 10px solid white;
+    border-bottom: 10px solid white;
+    border-left: 20px solid gray;
+    height: 0px;
+  }
+  .play{
+    /* border-top: 1px solid black; */
+    border-bottom: 1px solid black;
+    padding: 15px;
+  }
+
+  .song-list{
+      padding-bottom: 55px ;
+      padding-left: 10px;
+  }
+  .song-length{
+      float: right;
+  }
+.text{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+
+
+
+
+
+/* tweets */
+.tweets{
+    /* background-color: gray; */
+    padding-top: 10px;
+    padding-bottom: 40px;
+    border-bottom: green 0px solid;
+}
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.verified-icon{
+    width:20px;
+    height:20px;
+}
+
+
+
+.like{
+    width:30px;
+    height:20px;
+    padding-right: 5px;
+}
+
+.retweet{
+    width:40px;
+    height:20px;
+    padding-left: 15px;
+    padding-right: 5px;
+
+}
+
+.reply{
+    width:35px;
+    height:25px;
+    padding-left: 15px;
+    padding-right: 5px;
+
+}
+
+
+/* movie css */
+.main-moviebox{
+ border:  solid ;
+ width: 100%;
+ height: 500px;
+ margin-bottom: auto;
+ margin-top: 15px;
+ background-color: gray;
+}
+ .movie-img{
+    float: left;
+    margin: auto;
+} 
+
+.movie-box{
+    float: left;
+    padding-right: 30px;
+    margin-bottom: auto;
+}
+
+.movie-description{
+    float: left;
+    padding: 40px;
+    margin-bottom: auto;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* rectangle css */
+.rectangle{
+      display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 10% 0;
+}
+
+
+/* circle */
+
+.circle-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding-top: 10px;
+    background-color: midnightblue;
+
+
+}
+
+
+/* /Name tags css */
+
+
+.names{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10% 0;
+    border: 1px solid rgb(243, 243, 243);
+    width: fit-content;
+    margin-left: 400px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+.hello{
+    background-color: mediumblue;
+    align-items: center;
+    width: 300px;
+    height:75px;
+    color: mintcream;
+}
+.name-get{
+    height: 50px;
+}
+
+/* poker css */
+
+
+.poker-img{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+
+
+/* students css */
+
+#main-stdbox{
+    border: 1px solid green;
+    margin-left: 300px;
+    margin-right: 300px;
+    height: 100%;
+}
+.stud-box{
+    border: 1px solid green;
+    margin-left: 350px;
+    margin-right: 350px;
+    height: 150px;
+
+
+}
+
+/* restaurant css */
+.restaurant{
+ display: flex;
+   align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px navy  solid;
+    width: 300px;
+    float: left;
+    margin-left: 10px;
+    justify-content: space-between;
+    background-color: papayawhip;
+    border-radius: 1pc
+;}
+
+
+.survey{
+    float: left;
+    border: 1px solid rgb(248, 250, 248);
+    border-radius: 1pc;
+    margin-right: 100px;
+    width: 700px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+
+    margin-bottom: 10px;
+    text-align: left;
+background-color: rgb(238, 232, 232)} 

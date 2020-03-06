@@ -9,7 +9,7 @@ function renderStudents(students) {
 }
 
 function stud(ger){
-    var pres = '<h1 style="background-color: yellow;">Present</h1>'
+    var pres = '<h1 style="background-color: green;">Present</h1>'
     var pres2 = '<h1 style="background-color: red;">Absent</h1>'
 
     return `

@@ -30,9 +30,6 @@ function surveysl(test){
          ${nes.label}
          </p>
         <li> 
-       
-
-
         ${nes.options ?  nes.options.map(function(options){
 return `
 <li>
